@@ -1,0 +1,83 @@
+/*
+File: style.css
+Name: Aneesh Bathey
+Email: aneesh_bathey@student.uml.edu
+*/
+
+h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#score {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#tile-container {
+    position: relative;
+    width: 640px;
+    margin: 0 auto;
+}
+
+#tile-holder {
+    margin-top: 40px;
+    display: block;
+}
+
+.tile-grid {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 95%;
+    height: 95%;
+    padding: 20px;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.tile {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 2px solid white;
+    pointer-events: auto;
+    z-index: 10;
+}
+
+#game-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+#tiles-div {
+    position: absolute;
+    width: 573px;
+    height: 87px;
+}
+
+#tiles-div .tile {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+
+#word-status {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: red;
+}
